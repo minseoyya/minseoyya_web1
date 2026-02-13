@@ -15,39 +15,89 @@ export function CVPage() {
                     <p className="text-xl md:text-2xl text-neutral-500 font-medium">Graphic Design</p>
                 </header>
 
-                <section className="grid gap-12">
-
-                    {/* Education */}
-                    <div>
-                        <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6">Education</h2>
+                {/* Exhibition & Projects */}
+                <div>
+                    <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 font-mono">Exhibition & Projects</h2>
+                    <div className="grid gap-6">
                         <div>
-                            <div className="flex justify-between items-baseline mb-2">
-                                <h3 className="text-xl font-bold">BFA in Hongik University(Seoul)</h3>
-                                <span className="text-neutral-400 font-mono text-sm">2023 — present</span>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="text-lg font-bold">2024 WOWFF Exhibition</h3>
+                                <span className="text-neutral-400 font-mono text-sm">2024</span>
                             </div>
-                            <p className="text-neutral-600 italic">Major in Visual Communication Design</p>
+                            <p className="text-neutral-600 text-sm">Visual Art Director — Seoul, Korea</p>
+                        </div>
+                        <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="text-lg font-bold">Project 'Higgsfield' Brand Identity</h3>
+                                <span className="text-neutral-400 font-mono text-sm">2023</span>
+                            </div>
+                            <p className="text-neutral-600 text-sm">Main Designer & 3D Lead</p>
                         </div>
                     </div>
+                </div>
 
-                    {/* Awards */}
+                {/* Education */}
+                <div>
+                    <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 font-mono">Education</h2>
                     <div>
-                        <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6">Awards & Recognition</h2>
-                        <ul className="text-neutral-600 grid gap-2 list-disc list-inside">
-                            <li>WOWFF 2024 [Best Cinematography] Award</li>
-                            <li>Jeyoung Solutec [Best Product Design] Award</li>
-                        </ul>
-                    </div>
-
-                    {/* Skills */}
-                    <div>
-                        <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6">Expertise</h2>
-                        <div className="flex flex-wrap gap-2">
-                            {['3D Modeling', 'Generative AI', 'Art Direction', 'UI/UX Design', 'Branding', 'Motion Graphics', 'Blender', 'Stable Diffusion'].map(skill => (
-                                <span key={skill} className="px-3 py-1 bg-neutral-100 rounded-full text-sm font-medium">{skill}</span>
-                            ))}
+                        <div className="flex justify-between items-baseline mb-2">
+                            <h3 className="text-xl font-bold">BFA in Hongik University(Seoul)</h3>
+                            <span className="text-neutral-400 font-mono text-sm">2023 — present</span>
                         </div>
+                        <p className="text-neutral-600 italic">Major in Visual Communication Design</p>
                     </div>
-                </section>
+                </div>
+
+                {/* Certificates */}
+                <div>
+                    <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 font-mono">Certificates</h2>
+                    <ul className="text-neutral-600 grid gap-3 list-none">
+                        <li className="flex justify-between items-center border-b border-neutral-50 pb-2">
+                            <span className="font-medium">GTQ Graphic Technology — Level 1</span>
+                            <span className="text-neutral-300 text-xs font-mono uppercase">Adobe</span>
+                        </li>
+                        <li className="flex justify-between items-center border-b border-neutral-50 pb-2">
+                            <span className="font-medium">Computer Graphics Specialist</span>
+                            <span className="text-neutral-300 text-xs font-mono uppercase">HRD Service</span>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Awards */}
+                <div>
+                    <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 font-mono">Awards & Recognition</h2>
+                    <ul className="text-neutral-600 grid gap-2 list-disc list-inside">
+                        <li>WOWFF 2024 [Best Cinematography] Award</li>
+                        <li>Jeyoung Solutec [Best Product Design] Award</li>
+                    </ul>
+                </div>
+
+                {/* Expertise Categories */}
+                <div>
+                    <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-8 font-mono">Expertise</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+                        {[
+                            { title: '3D', skills: ['Blender', 'C4D', 'Modeling', 'Rendering'] },
+                            { title: 'UX/UI', skills: ['Figma', 'Prototyping', 'Framer', 'User Research'] },
+                            { title: 'AI', skills: ['Midjourney', 'Stable Diffusion', 'Runway', 'Antigravity'] },
+                            { title: 'Adobe', skills: ['Photoshop', 'Illustrator', 'InDesign', 'Premiere Pro', 'After Effects'] },
+                            { title: 'Interaction', skills: ['Motion Graphics', 'Web Design', 'Interactive Art'] },
+                            { title: 'Video', skills: ['Davinci Resolve', 'Cinematography', 'Video Editing'] },
+                        ].map((category) => (
+                            <div key={category.title}>
+                                <h3 className="text-xs font-black text-neutral-900 mb-4 tracking-widest uppercase flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 bg-neutral-900 rounded-full"></span>
+                                    {category.title}
+                                </h3>
+                                <div className="flex flex-wrap gap-x-4 gap-y-2">
+                                    {category.skills.map(skill => (
+                                        <span key={skill} className="text-neutral-500 text-sm hover:text-neutral-900 transition-colors cursor-default">{skill}</span>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
 
                 <footer className="mt-24 pt-8 border-t border-neutral-100 flex justify-between items-center text-sm text-neutral-400">
                     <span>© 2025 Minseo Kim</span>
