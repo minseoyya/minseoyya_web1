@@ -16,39 +16,13 @@ export function CVPage() {
                 </header>
 
                 <section className="grid gap-12">
-                    {/* About */}
-                    <div>
-                        <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 underline decoration-2 underline-offset-8">Experience</h2>
-                        <div className="grid gap-8">
-                            <div>
-                                <div className="flex justify-between items-baseline mb-2">
-                                    <h3 className="text-xl font-bold">Senior Graphic Designer</h3>
-                                    <span className="text-neutral-400 font-mono text-sm">2023 — Present</span>
-                                </div>
-                                <p className="text-neutral-600 leading-relaxed">
-                                    Leading visual identity projects focused on 3D environments and AI-driven creative workflows.
-                                    Collaborating with tech startups to bridge the gap between abstract concepts and visual language.
-                                </p>
-                            </div>
-                            <div>
-                                <div className="flex justify-between items-baseline mb-2">
-                                    <h3 className="text-xl font-bold">Creative Lead at Studio X</h3>
-                                    <span className="text-neutral-400 font-mono text-sm">2021 — 2023</span>
-                                </div>
-                                <p className="text-neutral-600 leading-relaxed">
-                                    Managed multi-disciplinary teams in developing immersive brand experiences.
-                                    Specialized in procedural 3D modeling and dynamic visual systems.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
                     {/* Education */}
                     <div>
-                        <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 underline decoration-2 underline-offset-8">Education</h2>
+                        <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6">Education</h2>
                         <div>
                             <div className="flex justify-between items-baseline mb-2">
-                                <h3 className="text-xl font-bold">BFA in Hongik University_Seoul</h3>
+                                <h3 className="text-xl font-bold">BFA in Hongik University(Seoul)</h3>
                                 <span className="text-neutral-400 font-mono text-sm">2023 — present</span>
                             </div>
                             <p className="text-neutral-600 italic">Major in Visual Communication Design</p>
@@ -57,7 +31,7 @@ export function CVPage() {
 
                     {/* Awards */}
                     <div>
-                        <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 underline decoration-2 underline-offset-8">Awards & Recognition</h2>
+                        <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6">Awards & Recognition</h2>
                         <ul className="text-neutral-600 grid gap-2 list-disc list-inside">
                             <li>WOWFF 2024 [Best Cinematography] Award</li>
                             <li>Jeyoung Solutec [Best Product Design] Award</li>
@@ -66,9 +40,9 @@ export function CVPage() {
 
                     {/* Skills */}
                     <div>
-                        <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 underline decoration-2 underline-offset-8">Expertise</h2>
+                        <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6">Expertise</h2>
                         <div className="flex flex-wrap gap-2">
-                            {['3D Modeling', 'Generative AI', 'Art Direction', 'UI/UX Design', 'Branding', 'Motion Graphics', 'Blender', 'Stable Diffusion'].map(skill => (
+                            {['3D', 'Blender', 'C4d', \n 'runwayAI', 'Midjourney', 'Antigravity', 'Higgsfield', \n 'Davinci Resolve', \n, 'Figma, 'Visual Code Studio',\n, 'Adobe Program'].map(skill => (
                                 <span key={skill} className="px-3 py-1 bg-neutral-100 rounded-full text-sm font-medium">{skill}</span>
                             ))}
                         </div>
