@@ -42,7 +42,7 @@ export const projects: Project[] = [
       {
         id: 'p1-1',
         type: 'image',
-        url: '/public/images/p1/01_01.png',
+        url: '/images/p1/01_01.png',
         alt: 'Ethereal Bloom - Main'
       },
       {
@@ -54,13 +54,13 @@ export const projects: Project[] = [
             {
         id: 'p1-5',
         type: 'image',
-        url: '/public/images/p1/01_02.jpg',
+        url: '/images/p1/01_02.jpg',
         alt: 'Ethereal Bloom - Detail'
       },
       {
         id: 'p1-6',
         type: 'image',
-        url: '/public/images/p1/01_03.jpg',
+        url: '/images/p1/01_03.jpg',
         alt: 'Ethereal Bloom - Detail 2'
       },
       {
@@ -78,19 +78,19 @@ export const projects: Project[] = [
       {
         id: 'p1-7',
         type: 'video',
-        url: '/public/videos/p1/imoogi 02.mp4',
+        url: '/videos/p1/imoogi 02.mp4',
         alt: 'Ethereal Bloom - Video'
       },
       {
         id: 'p1-8',
         type: 'video',
-        url: '/public/videos/p1/imoogi 01.mp4',
+        url: '/videos/p1/imoogi 01.mp4',
         alt: 'Ethereal Bloom - Video'
       },
       {
         id: 'p1-9',
         type: 'video',
-        url: '/public/videos/p1/imoogi 06.mp4',
+        url: '/videos/p1/imoogi 06.mp4',
         alt: 'Ethereal Bloom - Video'
       },
     ]
@@ -105,49 +105,49 @@ export const projects: Project[] = [
       {
         id: 'p2-4',
         type: 'video',
-        url: '/public/videos/p2/p2_01.mp4',
+        url: '/videos/p2/p2_01.mp4',
         alt: 'Urban Fragments - Video 2'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/public/images/p2/p2_01.png',
+        url: '/images/p2/p2_01.png',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/public/images/p2/p2_02.png',
+        url: '/images/p2/p2_02.png',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/public/images/p2/p2_03.png',
+        url: '/images/p2/p2_03.png',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/public/images/p2/p2_04.png',
+        url: '/images/p2/p2_04.png',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/public/images/p2/p2_05.png',
+        url: '/images/p2/p2_05.png',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/public/images/p2/p2_06.png',
+        url: '/images/p2/p2_06.png',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/public/images/p2/p2_07.png',
+        url: '/images/p2/p2_07.png',
         alt: 'Urban Fragments - Main'
       },
     ]
@@ -162,31 +162,31 @@ export const projects: Project[] = [
       {
         id: 'p5-1',
         type: 'video',
-        url: '/public/videos/p5/p5_01.mp4',
+        url: '/videos/p5/p5_01.mp4',
         alt: 'Digital Horizons - Video'
       },
       {
         id: 'p5-1',
         type: 'video',
-        url: '/public/videos/p5/p5_02.mp4',
+        url: '/videos/p5/p5_02.mp4',
         alt: 'Digital Horizons - Video'
       },
       {
         id: 'p5-1',
         type: 'video',
-        url: '/public/videos/p5/p5_03.mp4',
+        url: '/videos/p5/p5_03.mp4',
         alt: 'Digital Horizons - Video'
       },
       {
         id: 'p5-2',
         type: 'image',
-        url: '/public/images/p5/p5_01.png',
+        url: '/images/p5/p5_01.png',
         alt: 'Digital Horizons - Main'
       },
       {
         id: 'p5-2',
         type: 'image',
-        url: '/public/images/p5/p5_02.png',
+        url: '/images/p5/p5_02.png',
         alt: 'Digital Horizons - Main'
       }
     ]
@@ -201,37 +201,37 @@ export const projects: Project[] = [
       {
         id: 'p3-3',
         type: 'video',
-        url: '/public/videos/p3/p3_01.mp4',
+        url: '/videos/p3/p3_01.mp4',
         alt: 'Chromatic Waves - Video'
       },
       {
         id: 'p3-3',
         type: 'video',
-        url: '/public/videos/p3/p3_02.mp4',
+        url: '/videos/p3/p3_02.mp4',
         alt: 'Chromatic Waves - Video'
       },
       {
         id: 'p3-3',
         type: 'video',
-        url: '/public/videos/p3/p3_03.mp4',
+        url: '/videos/p3/p3_03.mp4',
         alt: 'Chromatic Waves - Video'
       },
       {
         id: 'p3-3',
         type: 'video',
-        url: '/public/videos/p3/p3_04.mp4',
+        url: '/videos/p3/p3_04.mp4',
         alt: 'Chromatic Waves - Video'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/public/images/p3/p3_01.png',
+        url: '/images/p3/p3_01.png',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/public/images/p3/p3_02.png',
+        url: '/images/p3/p3_02.png',
         alt: 'Urban Fragments - Main'
       },
     ]
@@ -246,37 +246,37 @@ export const projects: Project[] = [
       {
         id: 'p4-1',
         type: 'image',
-        url: '/public/images/p4/p4_01.png',
+        url: '/images/p4/p4_01.png',
         alt: 'Silent Portraits - Main'
       },
       {
         id: 'p4-1',
         type: 'image',
-        url: '/public/images/p4/p4_02.png',
+        url: '/images/p4/p4_02.png',
         alt: 'Silent Portraits - Main'
       },
       {
         id: 'p4-1',
         type: 'image',
-        url: '/public/images/p4/p4_03.png',
+        url: '/images/p4/p4_03.png',
         alt: 'Silent Portraits - Main'
       },
       {
         id: 'p4-1',
         type: 'image',
-        url: '/public/images/p4/p4_04.png',
+        url: '/images/p4/p4_04.png',
         alt: 'Silent Portraits - Main'
       },
       {
         id: 'p4-1',
         type: 'image',
-        url: '/public/images/p4/p4_05.png',
+        url: '/images/p4/p4_05.png',
         alt: 'Silent Portraits - Main'
       },
       {
         id: 'p4-1',
         type: 'image',
-        url: '/public/images/p4/p4_06.png',
+        url: '/images/p4/p4_06.png',
         alt: 'Silent Portraits - Main'
       }
     ]
@@ -291,61 +291,61 @@ export const projects: Project[] = [
       {
         id: 'p6-1',
         type: 'image',
-        url: '/public/images/p6/p6_01.png',
+        url: '/images/p6/p6_01.png',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/public/images/p6/p6_02.png',
+        url: '/images/p6/p6_02.png',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/public/images/p6/p6_03.png',
+        url: '/images/p6/p6_03.png',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/public/images/p6/p6_04.png',
+        url: '/images/p6/p6_04.png',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/public/images/p6/p6_05.png',
+        url: '/images/p6/p6_05.png',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/public/images/p6/p6_06.png',
+        url: '/images/p6/p6_06.png',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/public/images/p6/p6_07.png',
+        url: '/images/p6/p6_07.png',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/public/images/p6/p6_08.png',
+        url: '/images/p6/p6_08.png',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/public/images/p6/p6_09.png',
+        url: '/images/p6/p6_09.png',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/public/images/p6/p6_10.png',
+        url: '/images/p6/p6_10.png',
         alt: 'Minimal Forms - Main'
       }
     ]
