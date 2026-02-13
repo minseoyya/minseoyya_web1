@@ -42,9 +42,8 @@ function App() {
 
           <div className="hidden md:block absolute top-32 md:top-20 left-6 md:left-16 right-6 text-black z-10 transition-all duration-300">
             <h1 className="text-base md:text-2xl font-bold leading-relaxed max-w-xl">
-              Minseo Kim is Graphic designer based in Korea specialized in 3D & Ai.<nav></nav>
-              Focused on connecting technology, concept,<nav></nav>
-              and visual language into unified one project.
+              Graphic designer based in Korea <nav></nav>
+              Focused on connecting technology and concept into one project.
             </h1>
           </div>
 
