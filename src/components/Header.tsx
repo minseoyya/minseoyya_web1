@@ -24,7 +24,7 @@ export function Header({ projects, activeProjectId, onProjectClick }: HeaderProp
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'bg-white/80 backdrop-blur-md border-b border-neutral-100'
-          : 'bg-white/50 backdrop-blur-sm md:bg-transparent'
+          : 'bg-white/30 backdrop-blur-sm md:bg-transparent'
         }`}
     >
       <div className="w-full px-6 md:px-10 lg:px-16">
@@ -32,8 +32,8 @@ export function Header({ projects, activeProjectId, onProjectClick }: HeaderProp
           {/* Logo / Title */}
           <div className="flex-shrink-0">
             <Link to="/" className="block">
-              <h1 className="text-4xl md:text-2xl font-black tracking-tight text-neutral-900 uppercase">
-                MINSEOKIM
+              <h1 className="text-6xl md:text-4xl font-black tracking-tight text-neutral-900 uppercase">
+                MINSEO KIM
               </h1>
             </Link>
           </div>
