@@ -19,9 +19,9 @@ export function CVPage() {
                             </Link>
                         </div>
                         <div className="flex gap-4 text-xs font-bold uppercase tracking-widest pt-2">
-                            <span>Projects</span>
+                            <span>CV</span>
                             <span>/</span>
-                            <span>Archive</span>
+                            <span>About</span>
                         </div>
                     </div>
                 </header>
@@ -30,7 +30,7 @@ export function CVPage() {
                     {/* Column 1: About Statement */}
                     <div className="md:col-span-5">
                         <div className="sticky top-32">
-                            <p className="text-xl md:text-2xl font-medium leading-relaxed md:leading-snug tracking-tight text-neutral-900">
+                            <p className="text-s md:text-medium font-medium leading-relaxed md:leading-snug tracking-tight text-neutral-900">
                                 Hi! I'm graphic designer based in Korea specializing in 3D and AI.
                                 Focused on connecting technology and concept into unified visual language,
                                 she approaches each project from its core essence rather than surface aesthetics.
@@ -49,14 +49,14 @@ export function CVPage() {
                             <div>
                                 <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-4">Contact</h2>
                                 <div className="space-y-1 text-sm">
-                                    <p>minseo@example.com</p>
+                                    <p>minseoyya@gmail.com</p>
                                     <p>@minseoyya_</p>
                                 </div>
                             </div>
                             <div>
                                 <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-4">Education</h2>
                                 <div className="space-y-1 text-sm">
-                                    <p className="font-bold">Hongik University (Seoul)</p>
+                                    <p className="text-sm">Hongik University (Seoul)</p>
                                     <p className="text-neutral-500 italic">Visual Communication Design</p>
                                     <p className="text-neutral-400 font-mono">2023 — Present</p>
                                 </div>
@@ -66,13 +66,6 @@ export function CVPage() {
                         {/* Awards & Certificates */}
                         <div className="space-y-8">
                             <div>
-                                <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-4">Awards</h2>
-                                <ul className="space-y-2 text-sm">
-                                    <li>WOWFF 2024 [Best Cinematography]</li>
-                                    <li>Jeyoung Solutec [Best Product Design]</li>
-                                </ul>
-                            </div>
-                            <div>
                                 <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-4">Certificates</h2>
                                 <ul className="space-y-1 text-sm font-mono text-neutral-500 uppercase">
                                     <li>GTQ Level 1</li>
@@ -80,6 +73,13 @@ export function CVPage() {
                                 </ul>
                             </div>
                         </div>
+                         <div>
+                                <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-4">Awards</h2>
+                                <ul className="space-y-2 text-sm">
+                                    <li>WOWFF 2024 [Best Cinematography]</li>
+                                    <li>Jeyoung Solutec [Best Product Design]</li>
+                                </ul>
+                         </div>
 
                         {/* Exhibition & Projects - Spanning columns if needed */}
                         <div className="sm:col-span-2 border-t border-neutral-100 pt-16">
