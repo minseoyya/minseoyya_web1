@@ -55,33 +55,33 @@ export function ProjectGallery({ media }: ProjectGalleryProps) {
           msOverflowStyle: 'none',
         }}
       >
-      {media.map((item, index) => (
-        <div
-          key={item.id}
-          className="flex-shrink-0 snap-center"
-          style={{ maxWidth: '1000px' }} // 필요 없으면 삭제 가능
-        >
-          <div className="relative overflow-hidden h-[520px] flex items-center justify-center leading-none">
-            {item.type === 'video' ? (
-              <video
-                src={item.url}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="h-full w-auto max-w-none object-contain"
-              />
-            ) : (
-              <img
-                src={item.url}
-                alt={item.alt || ''}
-                className="h-full w-auto max-w-none object-contain"
-                loading={index === 0 ? 'eager' : 'lazy'}
-              />
-            )}
+        {media.map((item, index) => (
+          <div
+            key={item.id}
+            className="flex-shrink-0 snap-center"
+            style={{ maxWidth: '1000px' }} // 필요 없으면 삭제 가능
+          >
+            <div className="relative overflow-hidden h-[300px] sm:h-[400px] md:h-[520px] flex items-center justify-center leading-none">
+              {item.type === 'video' ? (
+                <video
+                  src={item.url}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="h-full w-auto max-w-none object-contain"
+                />
+              ) : (
+                <img
+                  src={item.url}
+                  alt={item.alt || ''}
+                  className="h-full w-auto max-w-none object-contain"
+                  loading={index === 0 ? 'eager' : 'lazy'}
+                />
+              )}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
 
       </div>
 
