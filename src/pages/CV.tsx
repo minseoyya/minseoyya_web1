@@ -50,6 +50,7 @@ export function CVPage() {
                                 <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-4">Contact</h2>
                                 <div className="space-y-1 text-sm">
                                     <p>minseoyya@gmail.com</p>
+                                    <p>@c352008</p>
                                     <p>@minseoyya_</p>
                                 </div>
                             </div>
