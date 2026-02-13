@@ -31,16 +31,16 @@ function App() {
       {/* Main Content */}
       <main>
         {/* Fullscreen Hero */}
-        <section className="relative overflow-hidden aspect-[4/3] sm:aspect-video md:aspect-none md:h-screen">
+        <section className="relative overflow-hidden h-screen md:h-screen">
           <img
             src="/images/header2.png"
             alt={projects[0].title}
-            className="absolute inset-0 w-fill h-fill object-cover"
+            className="absolute inset-0 w-full h-full object-cover"
           />
 
           <div className="absolute inset-0" />
 
-          <div className="absolute top-32 md:top-20 left-6 md:left-16 right-6 text-black z-10 transition-all duration-300">
+          <div className="hidden md:block absolute top-32 md:top-20 left-6 md:left-16 right-6 text-black z-10 transition-all duration-300">
             <h1 className="text-base md:text-2xl font-bold leading-relaxed max-w-xl">
               Minseo Kim is Graphic designer based in Korea specialized in 3D & Ai.<nav></nav>
               Focused on connecting technology, concept,<nav></nav>
