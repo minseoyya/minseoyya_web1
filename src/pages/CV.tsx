@@ -10,108 +10,136 @@ export function CVPage() {
                     <span>Back to Home</span>
                 </Link>
 
-                <header className="mb-16">
-                    <h1 className="text-xl md:text-2xl font-black uppercase tracking-tighter mb-4">Minseo Kim</h1>
-                    <p className="text-l md:text-xl text-neutral-500 font-medium">Graphic Design</p>
+                <header className="mb-24">
+                    <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+                        <div>
+                            <Link to="/" className="block group">
+                                <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-2">Minseo Kim</h1>
+                                <p className="text-lg md:text-xl font-medium tracking-tight">Graphic Design based in Korea</p>
+                            </Link>
+                        </div>
+                        <div className="flex gap-4 text-xs font-bold uppercase tracking-widest pt-2">
+                            <span>Projects</span>
+                            <span>/</span>
+                            <span>Archive</span>
+                        </div>
+                    </div>
                 </header>
 
-                {/* Exhibition & Projects */}
-                <div>
-                    <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 font-mono">Exhibition & Projects</h2>
-                    <div className="grid gap-6">
-                        <div>
-                            <div className="flex justify-between items-baseline mb-1">
-                                <h3 className="text-lg font-bold">2024 WOWFF 3D Head Director</h3>
-                                <span className="text-neutral-400 font-mono text-sm">2025</span>
-                            </div>
-                            <p className="text-neutral-600 text-sm">Visual Art Director & 3D Lead</p>
-                        </div>
-                        <div>
-                            <div className="flex justify-between items-baseline mb-1">
-                                <h3 className="text-lg font-bold">Global Project by VolkswagenAG </h3>
-                                <span className="text-neutral-400 font-mono text-sm">2024&2025</span>
-                            </div>
-                            <p className="text-neutral-600 text-sm">Main Designer & Product</p>
-                        </div>
-                         <div>
-                            <div className="flex justify-between items-baseline mb-1">
-                                <h3 className="text-lg font-bold">KARTS X HIU 2024 Exhibition </h3>
-                                <span className="text-neutral-400 font-mono text-sm">2024&2025</span>
-                            </div>
-                            <p className="text-neutral-600 text-sm">3D&AI based graphic & Interaction</p>
-                        </div>
-                         <div>
-                            <div className="flex justify-between items-baseline mb-1">
-                                <h3 className="text-lg font-bold">UMC 2025</h3>
-                                <span className="text-neutral-400 font-mono text-sm">2024</span>
-                            </div>
-                            <p className="text-neutral-600 text-sm">Main UX/UI Designer</p>
+                <main className="grid grid-cols-1 md:grid-cols-12 gap-y-16 md:gap-x-12">
+                    {/* Column 1: About Statement */}
+                    <div className="md:col-span-5">
+                        <div className="sticky top-32">
+                            <p className="text-xl md:text-2xl font-medium leading-relaxed md:leading-snug tracking-tight text-neutral-900">
+                                Hi! I'm graphic designer based in Korea specializing in 3D and AI.
+                                Focused on connecting technology and concept into unified visual language,
+                                she approaches each project from its core essence rather than surface aesthetics.
+                                With a bold yet controlled perspective,
+                                I like to visualize ideas into immersive imagery and structured visual systems.
+                                My work explores the relationship between digital innovation and emotional clarity—designing not just visuals, but direction and identity.
+                            </p>
                         </div>
                     </div>
-                </div>
 
-                {/* Education */}
-                <div>
-                    <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 font-mono">Education</h2>
-                    <div>
-                        <div className="flex justify-between items-baseline mb-2">
-                            <h3 className="text-xl font-bold">BFA in Hongik University(Seoul)</h3>
-                            <span className="text-neutral-400 font-mono text-sm">2023 — present</span>
-                        </div>
-                        <p className="text-neutral-600 italic">Major in Visual Communication Design</p>
-                    </div>
-                </div>
+                    {/* Column 2: Information Grid */}
+                    <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-16">
 
-                {/* Certificates */}
-                <div>
-                    <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 font-mono">Certificates</h2>
-                    <ul className="text-neutral-600 grid gap-3 list-none">
-                        <li className="flex justify-between items-center border-b border-neutral-50 pb-2">
-                            <span className="font-medium">GTQ Graphic Technology — Level 1</span>
-                            <span className="text-neutral-300 text-xs font-mono uppercase">Adobe</span>
-                        </li>
-                        <li className="flex justify-between items-center border-b border-neutral-50 pb-2">
-                            <span className="font-medium">Computer Graphics Specialist</span>
-                            <span className="text-neutral-300 text-xs font-mono uppercase">HRD Service</span>
-                        </li>
-                    </ul>
-                </div>
-
-                {/* Awards */}
-                <div>
-                    <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 font-mono">Awards & Recognition</h2>
-                    <ul className="text-neutral-600 grid gap-2 list-disc list-inside">
-                        <li>WOWFF 2024 [Best Cinematography] Award</li>
-                        <li>Jeyoung Solutec [Best Product Design] Award</li>
-                    </ul>
-                </div>
-
-                {/* Expertise Categories */}
-                <div>
-                    <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-8 font-mono">Expertise</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
-                        {[
-                            { title: '3D', skills: ['Blender', 'C4D'] },
-                            { title: 'UX/UI', skills: ['Figma', 'Visual Code Studio', 'Framer'] },
-                            { title: 'AI', skills: ['Midjourney', 'ComfyUI', 'Runway', 'Antigravity', 'Higgsfield' , 'Firefly'] },
-                            { title: 'Adobe', skills: ['Photoshop', 'Illustrator', 'InDesign', 'Premiere Pro', 'After Effects'] },
-                            { title: 'Interaction', skills: ['TouchDesigner', 'Media Pipe'] },
-                            { title: 'Video', skills: ['Davinci Resolve'] },
-                        ].map((category) => (
-                            <div key={category.title}>
-                                <h3 className="text-xs font-black text-neutral-900 mb-4 tracking-widest uppercase flex items-center gap-2">
-                                    <span className="w-1.5 h-1.5 bg-neutral-900 rounded-full"></span>
-                                    {category.title}
-                                </h3>
-                                <div className="flex flex-wrap gap-x-4 gap-y-2">
-                                    {category.skills.map(skill => (
-                                        <span key={skill} className="text-neutral-500 text-sm hover:text-neutral-900 transition-colors cursor-default">{skill}</span>
-                                    ))}
+                        {/* Contact & Socials */}
+                        <div className="space-y-8">
+                            <div>
+                                <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-4">Contact</h2>
+                                <div className="space-y-1 text-sm">
+                                    <p>minseo@example.com</p>
+                                    <p>@minseoyya_</p>
                                 </div>
                             </div>
-                        ))}
+                            <div>
+                                <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-4">Education</h2>
+                                <div className="space-y-1 text-sm">
+                                    <p className="font-bold">Hongik University (Seoul)</p>
+                                    <p className="text-neutral-500 italic">Visual Communication Design</p>
+                                    <p className="text-neutral-400 font-mono">2023 — Present</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Awards & Certificates */}
+                        <div className="space-y-8">
+                            <div>
+                                <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-4">Awards</h2>
+                                <ul className="space-y-2 text-sm">
+                                    <li>WOWFF 2024 [Best Cinematography]</li>
+                                    <li>Jeyoung Solutec [Best Product Design]</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-4">Certificates</h2>
+                                <ul className="space-y-1 text-sm font-mono text-neutral-500 uppercase">
+                                    <li>GTQ Level 1</li>
+                                    <li>CG Specialist</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Exhibition & Projects - Spanning columns if needed */}
+                        <div className="sm:col-span-2 border-t border-neutral-100 pt-16">
+                            <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-8">Exhibitions & Projects</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h3 className="text-base font-bold mb-1">2024 WOWFF 3D Head Director</h3>
+                                    <p className="text-sm text-neutral-600 mb-2">Visual Art Director & 3D Lead</p>
+                                    <span className="text-xs font-mono text-neutral-400 underline decoration-neutral-200">2025</span>
+                                </div>
+                                <div>
+                                    <h3 className="text-base font-bold mb-1">Global Project by VolkswagenAG</h3>
+                                    <p className="text-sm text-neutral-600 mb-2">Main Designer & Product</p>
+                                    <span className="text-xs font-mono text-neutral-400 underline decoration-neutral-200">2024 & 2025</span>
+                                </div>
+                                <div>
+                                    <h3 className="text-base font-bold mb-1">KARTS X HIU 2024 Exhibition</h3>
+                                    <p className="text-sm text-neutral-600 mb-2">3D & AI Graphic & Interaction</p>
+                                    <span className="text-xs font-mono text-neutral-400 underline decoration-neutral-200">2024 & 2025</span>
+                                </div>
+                                <div>
+                                    <h3 className="text-base font-bold mb-1">UMC 2025</h3>
+                                    <p className="text-sm text-neutral-600 mb-2">Main UX/UI Designer</p>
+                                    <span className="text-xs font-mono text-neutral-400 underline decoration-neutral-200">2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Expertise Category Grid */}
+                        <div className="sm:col-span-2 border-t border-neutral-100 pt-16">
+                            <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-8">Scope & Expertise</h2>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4">
+                                {[
+                                    { title: '3D', skills: ['Blender', 'C4D'] },
+                                    { title: 'UX/UI', skills: ['Figma', 'VS Code', 'Framer'] },
+                                    { title: 'AI Automation', skills: ['Midjourney', 'ComfyUI', 'Runway', 'Firefly'] },
+                                    { title: 'Adobe Ecosystem', skills: ['Ps', 'Ai', 'Id', 'Pr', 'Ae'] },
+                                    { title: 'Interaction', skills: ['TouchDesigner', 'Media Pipe'] },
+                                    { title: 'Video', skills: ['Davinci Resolve'] },
+                                ].map((cat) => (
+                                    <div key={cat.title}>
+                                        <h3 className="text-[10px] font-black uppercase tracking-wider text-neutral-300 mb-3">{cat.title}</h3>
+                                        <ul className="text-xs space-y-1 font-medium">
+                                            {cat.skills.map(s => <li key={s}>{s}</li>)}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </main>
+
+                <footer className="mt-48 pt-12 border-t border-neutral-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400">
+                    <div>© 2025 Minseoyya. Essence and Future.</div>
+                    <div className="flex gap-8">
+                        <a href="mailto:hello@minseo.com" className="hover:text-black transition-colors">Email</a>
+                        <a href="#" className="hover:text-black transition-colors">Instagram</a>
+                        <a href="#" className="hover:text-black transition-colors">LinkedIn</a>
+                    </div>
+                </footer>
 
                 <footer className="mt-24 pt-8 border-t border-neutral-100 flex justify-between items-center text-sm text-neutral-400">
                     <span>© 2025 Minseo Kim</span>
