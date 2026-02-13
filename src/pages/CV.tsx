@@ -42,7 +42,7 @@ export function CVPage() {
                     <div>
                         <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6">Expertise</h2>
                         <div className="flex flex-wrap gap-2">
-                            {['3D', 'Blender', 'C4d', \n 'runwayAI', 'Midjourney', 'Antigravity', 'Higgsfield', \n 'Davinci Resolve', \n, 'Figma, 'Visual Code Studio',\n, 'Adobe Program'].map(skill => (
+                            {['3D Modeling', 'Generative AI', 'Art Direction', 'UI/UX Design', 'Branding', 'Motion Graphics', 'Blender', 'Stable Diffusion'].map(skill => (
                                 <span key={skill} className="px-3 py-1 bg-neutral-100 rounded-full text-sm font-medium">{skill}</span>
                             ))}
                         </div>
