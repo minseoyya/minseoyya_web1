@@ -54,13 +54,13 @@ export const projects: Project[] = [
             {
         id: 'p1-5',
         type: 'image',
-        url: '/images/p1/01_02.JPG',
+        url: '/images/p1/01_02.jpg',
         alt: 'Ethereal Bloom - Detail'
       },
       {
         id: 'p1-6',
         type: 'image',
-        url: '/images/p1/01_03.JPG',
+        url: '/images/p1/01_03.jpg',
         alt: 'Ethereal Bloom - Detail 2'
       },
       {
@@ -78,13 +78,13 @@ export const projects: Project[] = [
       {
         id: 'p1-7',
         type: 'video',
-        url: '/videos/p1/imoogi 02.mp4',
+        url: '/videos/p1/imoogi-02.mp4',
         alt: 'Ethereal Bloom - Video'
       },
       {
         id: 'p1-8',
         type: 'video',
-        url: '/videos/p1/imoogi 01.mp4',
+        url: '/videos/p1/imoogi-01.mp4',
         alt: 'Ethereal Bloom - Video'
       },
       {
