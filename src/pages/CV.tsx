@@ -15,7 +15,7 @@ export function CVPage() {
                         <div>
                             <Link to="/" className="block group">
                                 <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-2">Minseo Kim</h1>
-                                <p className="text-xs md:text-sm tracking-tight">kim Minseo</p>
+                                <p className="text-xs md:text-sm tracking-tight">김민서</p>
                             </Link>
                         </div>
                         <div className="flex gap-4 text-xs font-bold uppercase tracking-widest pt-2">
