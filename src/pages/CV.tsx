@@ -11,8 +11,8 @@ export function CVPage() {
                 </Link>
 
                 <header className="mb-16">
-                    <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">Minseo Kim</h1>
-                    <p className="text-xl md:text-2xl text-neutral-500 font-medium">Graphic Design</p>
+                    <h1 className="text-xl md:text-2xl font-black uppercase tracking-tighter mb-4">Minseo Kim</h1>
+                    <p className="text-l md:text-xl text-neutral-500 font-medium">Graphic Design</p>
                 </header>
 
                 {/* Exhibition & Projects */}
