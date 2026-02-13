@@ -78,13 +78,13 @@ export const projects: Project[] = [
       {
         id: 'p1-7',
         type: 'video',
-        url: '/videos/p1/imoogi-02.mp4',
+        url: '/videos/p1/imoogi 02.mp4',
         alt: 'Ethereal Bloom - Video'
       },
       {
         id: 'p1-8',
         type: 'video',
-        url: '/videos/p1/imoogi-01.mp4',
+        url: '/videos/p1/imoogi 01.mp4',
         alt: 'Ethereal Bloom - Video'
       },
       {
