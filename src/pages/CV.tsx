@@ -67,9 +67,9 @@ export function CVPage() {
                         <div className="space-y-8">
                             <div>
                                 <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-4">Certificates</h2>
-                                <ul className="space-y-1 text-sm font-mono text-neutral-500 uppercase">
+                                <ul className="space-y-1 text-sm">
                                     <li>GTQ Level 1</li>
-                                    <li>CG Specialist</li>
+                                    <li>Toeic</li>
                                 </ul>
                             </div>
                         </div>
