@@ -35,7 +35,7 @@ function App() {
           <img
             src="/images/header2.png"
             alt={projects[0].title}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-fill h-fill object-cover"
           />
 
           <div className="absolute inset-0" />
