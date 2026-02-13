@@ -12,7 +12,7 @@ export function CVPage() {
 
                 <header className="mb-16">
                     <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">Minseo Kim</h1>
-                    <p className="text-xl md:text-2xl text-neutral-500 font-medium">Graphic Designer & 3D Artist</p>
+                    <p className="text-xl md:text-2xl text-neutral-500 font-medium">Graphic Design</p>
                 </header>
 
                 <section className="grid gap-12">
@@ -48,10 +48,10 @@ export function CVPage() {
                         <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 underline decoration-2 underline-offset-8">Education</h2>
                         <div>
                             <div className="flex justify-between items-baseline mb-2">
-                                <h3 className="text-xl font-bold">BFA in Visual Communication Design</h3>
-                                <span className="text-neutral-400 font-mono text-sm">2017 — 2021</span>
+                                <h3 className="text-xl font-bold">BFA in Hongik University_Seoul</h3>
+                                <span className="text-neutral-400 font-mono text-sm">2023 — present</span>
                             </div>
-                            <p className="text-neutral-600 italic">Major in Graphic Design & Motion Graphics</p>
+                            <p className="text-neutral-600 italic">Major in Visual Communication Design</p>
                         </div>
                     </div>
 
@@ -59,9 +59,8 @@ export function CVPage() {
                     <div>
                         <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-6 underline decoration-2 underline-offset-8">Awards & Recognition</h2>
                         <ul className="text-neutral-600 grid gap-2 list-disc list-inside">
-                            <li>Adobe Design Achievement Awards — Semi-finalist</li>
-                            <li>Graphica Magazine Features: New Generation Artists</li>
-                            <li>A' Design Award — Iron Winner</li>
+                            <li>WOWFF 2024 [Best Cinematography] Award</li>
+                            <li>Jeyoung Solutec [Best Product Design] Award</li>
                         </ul>
                     </div>
 
