@@ -21,17 +21,31 @@ export function CVPage() {
                     <div className="grid gap-6">
                         <div>
                             <div className="flex justify-between items-baseline mb-1">
-                                <h3 className="text-lg font-bold">2024 WOWFF Exhibition</h3>
-                                <span className="text-neutral-400 font-mono text-sm">2024</span>
+                                <h3 className="text-lg font-bold">2024 WOWFF 3D Head Director</h3>
+                                <span className="text-neutral-400 font-mono text-sm">2025</span>
                             </div>
-                            <p className="text-neutral-600 text-sm">Visual Art Director — Seoul, Korea</p>
+                            <p className="text-neutral-600 text-sm">Visual Art Director & 3D Lead</p>
                         </div>
                         <div>
                             <div className="flex justify-between items-baseline mb-1">
-                                <h3 className="text-lg font-bold">Project 'Higgsfield' Brand Identity</h3>
-                                <span className="text-neutral-400 font-mono text-sm">2023</span>
+                                <h3 className="text-lg font-bold">Global Project by VolkswagenAG </h3>
+                                <span className="text-neutral-400 font-mono text-sm">2024&2025</span>
                             </div>
-                            <p className="text-neutral-600 text-sm">Main Designer & 3D Lead</p>
+                            <p className="text-neutral-600 text-sm">Main Designer & Product</p>
+                        </div>
+                         <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="text-lg font-bold">KARTS X HIU 2024 Exhibition </h3>
+                                <span className="text-neutral-400 font-mono text-sm">2024&2025</span>
+                            </div>
+                            <p className="text-neutral-600 text-sm">3D&AI based graphic & Interaction</p>
+                        </div>
+                         <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="text-lg font-bold">UMC 2025</h3>
+                                <span className="text-neutral-400 font-mono text-sm">2024</span>
+                            </div>
+                            <p className="text-neutral-600 text-sm">Main UX/UI Designer</p>
                         </div>
                     </div>
                 </div>
@@ -77,12 +91,12 @@ export function CVPage() {
                     <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-300 mb-8 font-mono">Expertise</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
                         {[
-                            { title: '3D', skills: ['Blender', 'C4D', 'Modeling', 'Rendering'] },
-                            { title: 'UX/UI', skills: ['Figma', 'Prototyping', 'Framer', 'User Research'] },
-                            { title: 'AI', skills: ['Midjourney', 'Stable Diffusion', 'Runway', 'Antigravity'] },
+                            { title: '3D', skills: ['Blender', 'C4D'] },
+                            { title: 'UX/UI', skills: ['Figma', 'Visual Code Studio', 'Framer'] },
+                            { title: 'AI', skills: ['Midjourney', 'ComfyUI', 'Runway', 'Antigravity', 'Higgsfield' , 'Firefly'] },
                             { title: 'Adobe', skills: ['Photoshop', 'Illustrator', 'InDesign', 'Premiere Pro', 'After Effects'] },
-                            { title: 'Interaction', skills: ['Motion Graphics', 'Web Design', 'Interactive Art'] },
-                            { title: 'Video', skills: ['Davinci Resolve', 'Cinematography', 'Video Editing'] },
+                            { title: 'Interaction', skills: ['TouchDesigner', 'Media Pipe'] },
+                            { title: 'Video', skills: ['Davinci Resolve'] },
                         ].map((category) => (
                             <div key={category.title}>
                                 <h3 className="text-xs font-black text-neutral-900 mb-4 tracking-widest uppercase flex items-center gap-2">
