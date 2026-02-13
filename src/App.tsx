@@ -40,7 +40,7 @@ function App() {
 
           <div className="absolute inset-0" />
 
-          <div className="absolute top-20 left-6 md:left-16 right-6 text-black">
+          <div className=" top-20 left-6 md:left-16 right-6 text-black">
             <h1 className="text-base md:text-2xl font-bold leading-relaxed max-w-xl">
               Minseo Kim is Graphic designer based in Korea specialized in 3D & Ai.<nav></nav>
               Focused on connecting technology, concept,<nav></nav>
