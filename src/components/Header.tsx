@@ -32,7 +32,7 @@ export function Header({ projects, activeProjectId, onProjectClick }: HeaderProp
           {/* Logo / Title */}
           <div className="flex-shrink-0">
             <Link to="/" className="block">
-              <h1 className="text-6xl md:text-4xl font-black tracking-tight text-neutral-900 uppercase">
+              <h1 className="text-4xl md:text-2xl font-black tracking-tight text-neutral-900 uppercase">
                 MINSEO KIM
               </h1>
             </Link>
