@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import type { Project } from '@/types';
 
 interface HeaderProps {
@@ -30,26 +31,37 @@ export function Header({ projects, activeProjectId, onProjectClick }: HeaderProp
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo / Title */}
           <div className="flex-shrink-0">
-            <h1 className="text-4xl md:text-2xl font-black tracking-tight text-neutral-900 uppercase">
-              MINSEOKIM
-            </h1>
+            <Link to="/" className="block">
+              <h1 className="text-4xl md:text-2xl font-black tracking-tight text-neutral-900 uppercase">
+                MINSEOKIM
+              </h1>
+            </Link>
           </div>
 
           {/* Project Navigation */}
-          <nav className="hidden md:flex items-center gap-1">
-            {projects.map((project, index) => (
-              <button
-                key={project.id}
-                onClick={() => onProjectClick(project.id)}
-                className={`px-3 py-1.5 text-sm transition-all duration-300 rounded-full ${activeProjectId === project.id
-                    ? 'bg-neutral-900 text-white'
-                    : 'text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100'
-                  }`}
-              >
-                {String(index + 1).padStart(2, '0')}
-              </button>
-            ))}
-          </nav>
+          <div className="flex items-center gap-4">
+            <nav className="hidden md:flex items-center gap-1">
+              {projects.map((project, index) => (
+                <button
+                  key={project.id}
+                  onClick={() => onProjectClick(project.id)}
+                  className={`px-3 py-1.5 text-sm transition-all duration-300 rounded-full ${activeProjectId === project.id
+                      ? 'bg-neutral-900 text-white'
+                      : 'text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100'
+                    }`}
+                >
+                  {String(index + 1).padStart(2, '0')}
+                </button>
+              ))}
+            </nav>
+
+            <Link
+              to="/cv"
+              className="px-4 py-1.5 text-sm font-bold bg-neutral-900 text-white rounded-full hover:bg-neutral-700 transition-colors"
+            >
+              CV
+            </Link>
+          </div>
 
           {/* Mobile Menu Indicator */}
           <div className="md:hidden text-sm text-neutral-500">
@@ -72,8 +84,8 @@ export function Header({ projects, activeProjectId, onProjectClick }: HeaderProp
               key={project.id}
               onClick={() => onProjectClick(project.id)}
               className={`flex-shrink-0 px-3 py-1.5 text-sm transition-all duration-300 rounded-full ${activeProjectId === project.id
-                  ? 'bg-neutral-900 text-white'
-                  : 'text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100'
+                ? 'bg-neutral-900 text-white'
+                : 'text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100'
                 }`}
             >
               {String(index + 1).padStart(2, '0')}

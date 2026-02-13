@@ -1,10 +1,12 @@
 import { useState, useCallback } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { ProjectSection } from '@/components/ProjectSection';
 import { projects } from '@/data/projects';
+import { CVPage } from '@/pages/CV';
 import './App.css';
 
-function App() {
+function Home() {
   const [activeProjectId, setActiveProjectId] = useState<string | null>(null);
 
   const handleProjectClick = useCallback((projectId: string) => {
@@ -42,8 +44,9 @@ function App() {
 
           <div className="hidden md:block absolute top-32 md:top-20 left-6 md:left-16 right-6 text-black z-10 transition-all duration-300">
             <h1 className="text-base md:text-2xl font-bold leading-relaxed max-w-xl">
-              Graphic designer based in Korea <nav></nav>
-              Focused on connecting technology and concept into one project.
+              Minseo Kim is Graphic designer based in Korea specialized in 3D & Ai.<nav></nav>
+              Focused on connecting technology, concept,<nav></nav>
+              and visual language into unified one project.
             </h1>
           </div>
 
@@ -94,6 +97,17 @@ function App() {
         </footer>
       </main>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cv" element={<CVPage />} />
+      </Routes>
+    </Router>
   );
 }
 
