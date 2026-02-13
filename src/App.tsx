@@ -40,7 +40,7 @@ function App() {
 
           <div className="absolute inset-0" />
 
-          <div className=" top-20 left-6 md:left-16 right-6 text-black">
+          <div className="absolute top-32 md:top-20 left-6 md:left-16 right-6 text-black z-10 transition-all duration-300">
             <h1 className="text-base md:text-2xl font-bold leading-relaxed max-w-xl">
               Minseo Kim is Graphic designer based in Korea specialized in 3D & Ai.<nav></nav>
               Focused on connecting technology, concept,<nav></nav>
@@ -70,7 +70,7 @@ function App() {
 
 
 
-            <div className="mt-16 pt-8 border-t border-neutral-100 flex flex-col md:flex-row items-left text-sm text-neutral-400">
+            <div className="mt-16 pt-8 border-t border-neutral-100 flex flex-col md:flex-row items-start text-sm text-neutral-400">
                 <h1 className="text-xl md:text-2xl font-bold">
                   Graphic designer based in Korea specialized in 3D & Ai.<nav></nav>
                   Focused on connecting technology, concept,<nav></nav>
