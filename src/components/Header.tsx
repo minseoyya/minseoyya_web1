@@ -23,8 +23,8 @@ export function Header({ projects, activeProjectId, onProjectClick }: HeaderProp
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'bg-white/80 backdrop-blur-md border-b border-neutral-100'
-          : 'bg-white/30 backdrop-blur-sm md:bg-transparent'
+          ? 'bg-white/80 backdrop- border-b border-neutral-100'
+          : 'bg-white/30 backdrop- md:bg-transparent'
         }`}
     >
       <div className="w-full px-6 md:px-10 lg:px-16">
