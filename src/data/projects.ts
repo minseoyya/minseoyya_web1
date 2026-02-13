@@ -54,13 +54,13 @@ export const projects: Project[] = [
             {
         id: 'p1-5',
         type: 'image',
-        url: '/images/p1/01_02.jpg',
+        url: '/images/p1/01_02.JPG',
         alt: 'Ethereal Bloom - Detail'
       },
       {
         id: 'p1-6',
         type: 'image',
-        url: '/images/p1/01_03.jpg',
+        url: '/images/p1/01_03.JPG',
         alt: 'Ethereal Bloom - Detail 2'
       },
       {
