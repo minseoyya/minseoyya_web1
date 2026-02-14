@@ -5,6 +5,70 @@ interface ProjectGalleryProps {
   media: MediaItem[];
 }
 
+function GalleryItem({ item, index }: { item: MediaItem; index: number }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.5 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isVisible) {
+        videoRef.current.play().catch(() => {
+          // Auto-play might be blocked by browser
+        });
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  }, [isVisible]);
+
+  return (
+    <div
+      ref={containerRef}
+      className="flex-shrink-0 snap-center"
+      style={{ maxWidth: '100vw' }}
+    >
+      <div className="relative overflow-hidden h-[350px] sm:h-[450px] md:h-[600px] lg:h-[700px] flex items-center justify-center leading-none">
+        {item.type === 'video' ? (
+          <video
+            ref={videoRef}
+            src={item.url}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="h-full w-auto max-w-none object-contain transition-opacity duration-700"
+            style={{ opacity: isVisible ? 1 : 0.8 }}
+          />
+        ) : (
+          <img
+            src={item.url}
+            alt={item.alt || ''}
+            className="h-full w-auto max-w-none object-contain"
+            loading={index === 0 ? 'eager' : 'lazy'}
+            decoding="async"
+          />
+        )}
+      </div>
+    </div>
+  );
+}
+
 export function ProjectGallery({ media }: ProjectGalleryProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -53,82 +117,41 @@ export function ProjectGallery({ media }: ProjectGalleryProps) {
         style={{
           scrollbarWidth: 'none',
           msOverflowStyle: 'none',
+          WebkitOverflowScrolling: 'touch'
         }}
       >
         {media.map((item, index) => (
-          <div
-            key={item.id}
-            className="flex-shrink-0 snap-center"
-            style={{ maxWidth: '1000px' }} // 필요 없으면 삭제 가능
-          >
-            <div className="relative overflow-hidden h-[300px] sm:h-[400px] md:h-[520px] flex items-center justify-center leading-none">
-              {item.type === 'video' ? (
-                <video
-                  src={item.url}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="h-full w-auto max-w-none object-contain"
-                />
-              ) : (
-                <img
-                  src={item.url}
-                  alt={item.alt || ''}
-                  className="h-full w-auto max-w-none object-contain"
-                  loading={index === 0 ? 'eager' : 'lazy'}
-                />
-              )}
-            </div>
-          </div>
+          <GalleryItem key={item.id} item={item} index={index} />
         ))}
-
       </div>
 
-      {/* Navigation Arrows */}
-      {canScrollLeft && (
-        <button
-          onClick={() => scroll('left')}
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white"
-          aria-label="Scroll left"
-        >
-          <svg
-            className="w-5 h-5 text-neutral-900"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+      {/* Navigation Arrows - Hidden on touch devices usually, but kept for desktop */}
+      <div className="hidden md:block">
+        {canScrollLeft && (
+          <button
+            onClick={() => scroll('left')}
+            className="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white"
+            aria-label="Scroll left"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-      )}
+            <svg className="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+        )}
 
-      {canScrollRight && (
-        <button
-          onClick={() => scroll('right')}
-          className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white"
-          aria-label="Scroll right"
-        >
-          <svg
-            className="w-5 h-5 text-neutral-900"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+        {canScrollRight && (
+          <button
+            onClick={() => scroll('right')}
+            className="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white"
+            aria-label="Scroll right"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </button>
-      )}
+            <svg className="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        )}
+      </div>
     </div>
   );
 }
+

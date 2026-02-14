@@ -42,7 +42,7 @@ export const projects: Project[] = [
       {
         id: 'p1-1',
         type: 'image',
-        url: '/images/p1/01_01.png',
+        url: '/images/p1/01_01.jpg',
         alt: 'Ethereal Bloom - Main'
       },
       {
@@ -51,7 +51,7 @@ export const projects: Project[] = [
         url: '/videos/p1/imoogi 04.mp4',
         alt: 'Ethereal Bloom - Video'
       },
-            {
+      {
         id: 'p1-5',
         type: 'image',
         url: '/images/p1/p1_02.jpg',
@@ -111,48 +111,48 @@ export const projects: Project[] = [
       {
         id: 'p2-2',
         type: 'image',
-        url: '/images/p2/p2_01.png',
+        url: '/images/p2/p2_01.jpg',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/images/p2/p2_02.png',
+        url: '/images/p2/p2_02.jpg',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/images/p2/p2_03.png',
+        url: '/images/p2/p2_03.jpg',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/images/p2/p2_04.png',
+        url: '/images/p2/p2_04.jpg',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/images/p2/p2_05.png',
+        url: '/images/p2/p2_05.jpg',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/images/p2/p2_06.png',
+        url: '/images/p2/p2_06.jpg',
         alt: 'Urban Fragments - Main'
       },
       {
         id: 'p2-2',
         type: 'image',
-        url: '/images/p2/p2_07.png',
+        url: '/images/p2/p2_07.jpg',
         alt: 'Urban Fragments - Main'
       },
     ]
   },
-    {
+  {
     id: 'project-3',
     title: 'WOWFF 2025',
     category: 'Head Creative Director / VFX(3D)',
@@ -291,61 +291,61 @@ export const projects: Project[] = [
       {
         id: 'p6-1',
         type: 'image',
-        url: '/images/p6/p6_01.png',
+        url: '/images/p6/p6_01.jpg',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/images/p6/p6_02.png',
+        url: '/images/p6/p6_02.jpg',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/images/p6/p6_03.png',
+        url: '/images/p6/p6_03.jpg',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/images/p6/p6_04.png',
+        url: '/images/p6/p6_04.jpg',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/images/p6/p6_05.png',
+        url: '/images/p6/p6_05.jpg',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/images/p6/p6_06.png',
+        url: '/images/p6/p6_06.jpg',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/images/p6/p6_07.png',
+        url: '/images/p6/p6_07.jpg',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/images/p6/p6_08.png',
+        url: '/images/p6/p6_08.jpg',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/images/p6/p6_09.png',
+        url: '/images/p6/p6_09.jpg',
         alt: 'Minimal Forms - Main'
       },
       {
         id: 'p6-1',
         type: 'image',
-        url: '/images/p6/p6_10.png',
+        url: '/images/p6/p6_10.jpg',
         alt: 'Minimal Forms - Main'
       }
     ]

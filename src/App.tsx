@@ -33,11 +33,12 @@ function Home() {
       {/* Main Content */}
       <main>
         {/* Fullscreen Hero */}
-        <section className="relative overflow-hidden h-screen md:h-screen bg-white flex items-center justify-center">
+        <section className="relative overflow-hidden h-[100dvh] bg-white flex items-center justify-center">
           <img
-            src="/images/header2.png"
-            alt={projects[0].title}
+            src="/images/header2.jpg"
+            alt="Hero Image"
             className="w-full h-full object-contain md:object-cover"
+            fetchPriority="high"
           />
 
           <div className="absolute inset-0" />
@@ -46,7 +47,6 @@ function Home() {
             <h1 className="text-base md:text-2xl font-bold leading-relaxed max-w-xl">
             </h1>
           </div>
-
         </section>
 
 
