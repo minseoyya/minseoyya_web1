@@ -103,16 +103,16 @@ export const projects: Project[] = [
     description: 'Designed the key visual graphics and produced the promotional video for the first edition launch of SIERA.',
     media: [
       {
-        id: 'p2-4',
-        type: 'video',
-        url: '/videos/p2/p2_01.mp4',
-        alt: 'Urban Fragments - Video 2'
-      },
-      {
         id: 'p2-2',
         type: 'image',
         url: '/images/p2/p2_01.jpg',
         alt: 'Urban Fragments - Main'
+      },
+      {
+        id: 'p2-4',
+        type: 'video',
+        url: '/videos/p2/p2_01.mp4',
+        alt: 'Urban Fragments - Video 2'
       },
       {
         id: 'p2-2',
