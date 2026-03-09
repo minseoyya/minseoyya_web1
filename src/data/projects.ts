@@ -194,7 +194,7 @@ export const projects: Project[] = [
   {
     id: 'project-3',
     title: 'Chibimon',
-    category: 'VFX(AI/3D)',
+    category: 'VFX(AI/3D), VFX Team Project',
     year: '2025/09. - 2025/12.',
     description: 'VFX in Music Video Chibimon',
     media: [
