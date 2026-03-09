@@ -98,7 +98,7 @@ export const projects: Project[] = [
   {
     id: 'project-2',
     title: 'SIERA 2025 FW Limited',
-    category: 'AI/3D, Video',
+    category: 'AI/3D Design, Video Crew',
     year: '2025/08. - 2026/01.',
     description: 'Designed the key visual graphics and produced the promotional video for the first edition launch of SIERA.',
     media: [
@@ -239,7 +239,7 @@ export const projects: Project[] = [
   {
     id: 'Giggle',
     title: 'Giggle',
-    category: 'Photography / Editorial',
+    category: 'Team Project / Visual Directing',
     year: '2025/03. - 2026/01.',
     description: 'Fashion editorial that express child-like freedom and innocence with custom garments.',
     media: [
