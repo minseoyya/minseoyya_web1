@@ -349,8 +349,8 @@ export const projects: Project[] = [
         alt: 'Minimal Forms - Main'
       }
     ]
-  }
-   {
+  },
+  {
     id: 'project-7',
     title: 'Texture Vision',
     category: '3D & AI based Interaction Project',
