@@ -350,4 +350,25 @@ export const projects: Project[] = [
       }
     ]
   }
+   {
+    id: 'project-7',
+    title: 'Texture Vision',
+    category: '3D & AI based Interaction Project',
+    year: '2025/06. - 2025/06.',
+    description: 'An interaction program that directly applies the object material recognized by the camera to the 3D model in real time',
+    media: [
+      {
+        id: 'p7-1',
+        type: 'Video',
+        url: '/videos/p7/p7_01.mp4',
+        alt: 'Minimal Forms - Main'
+      },
+      {
+        id: 'p7-2',
+        type: 'image',
+        url: '/images/p7/p7_01.png',
+        alt: 'Minimal Forms - Main'
+      }
+    ]
+  }
 ];
